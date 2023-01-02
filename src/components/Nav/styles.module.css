@@ -1,0 +1,141 @@
+.wrapper {
+  background-color: var(--ksf-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 112px;
+}
+
+.wrapper.mobile {
+  height: unset;
+  padding: 2rem 2.5rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_links {
+  height: 100%;
+  padding: 0rem 7.5rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav_link__item,
+.nav_link__item a {
+  display: flex;
+  align-items: center;
+}
+
+.nav_link__item {
+  margin: 0 1.5rem;
+}
+
+.nav_link__item:first-child {
+  margin-left: 0;
+}
+.nav_link__item:last-child {
+  margin-right: 0;
+}
+
+.nav_link__item a {
+  font-family: 'DM Sans';
+  height: fit-content;
+  text-decoration: none;
+  color: var(--ksf-black-v1);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+/* Footer nav links */
+.footer_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+
+.footer_links a {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #777e91;
+}
+
+.mobile_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile_logo img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.mobile_nav_links__container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 2rem 2.5rem;
+  background-color: var(--ksf-white);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_nav_links__logo {
+  margin-bottom: 2.5rem;
+}
+
+.close_icon {
+  position: absolute;
+  right: 2.5rem;
+  top: 3.75rem;
+  cursor: pointer;
+}
+
+.hamburger_menu {
+  cursor: pointer;
+}
+
+.mobile_nav_links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 20px;
+}
+
+.mobile_nav_link__item a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #777e91;
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper.mobile {
+    padding: 1rem;
+  }
+
+  .mobile_logo img {
+    object-fit: cover;
+    width: 88px;
+    height: 88px;
+  }
+}

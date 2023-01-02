@@ -1,0 +1,36 @@
+.tag,
+.tag.rounded {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  width: fit-content;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--ksf-primary);
+}
+
+.tag.square {
+  padding: 8px 8px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--ksf-neutral-8);
+}
+
+.tag.blue {
+  background-color: var(--ksf-blue);
+}
+
+.tag.pink {
+  background-color: var(--ksf-pink);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.375rem;
+}

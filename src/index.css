@@ -1,0 +1,66 @@
+:root {
+  --ksf-black: #0f1114;
+  --ksf-black-v1: #3d3d3d;
+  --ksf-white: #fff;
+  --ksf-green: #03472b;
+  --ksf-primary: #fafafa;
+  --ksf-primary-shade-1: #e8e8e8;
+  --ksf-primary-shade-2: #d6d6d6;
+  --ksf-primary-tint-1: #fbfbfb;
+  --ksf-primary-tint-2: #242436;
+  --ksf-secondary-tint-1: #161621;
+  --ksf-secondary-tint-2: #242436;
+  --ksf-secondary-tint-3: #32324b;
+  --ksf-primary-tint-5: #4e4e75;
+  --ksf-yellow: #efa930;
+  --ksf-blue: #2e75ef;
+  --ksf-pink: #ef466f;
+  --ksf-neutral-8: #fcfcfd;
+  --ksf-neutral-7: #f4f5f6;
+  --ksf-horizontal-rule-color: #c4c4c4;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--ksf-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'DM Sans';
+}
+
+p,
+button {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+hr {
+  width: 100px;
+  background-color: var(--ksf-horizontal-rule-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+body > iframe {
+  pointer-events: none;
+}
+
+iframe {
+  background-color: transparent;
+}

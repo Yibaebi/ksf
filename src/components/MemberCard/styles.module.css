@@ -1,0 +1,39 @@
+.card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--ksf-white);
+  border: 1px solid #e6e8ec;
+  border-radius: 24px;
+  width: fit-content;
+  height: 308px;
+  width: 256px;
+  justify-content: center;
+}
+
+.card_container img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.member_details {
+  text-align: center;
+}
+
+.member_details h6 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #23262f;
+}
+
+.member_details p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777e91;
+}

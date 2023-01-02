@@ -1,0 +1,97 @@
+.carousel_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.carousel_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.carousel_header h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ksf-primary-tint-2);
+}
+
+.carousel_header h5 span {
+  color: #a1a1a1;
+}
+
+.event_info {
+  display: flex;
+}
+
+.tag {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event_info__description {
+  margin-right: 5rem;
+}
+
+.event_info__description h4 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--ksf-secondary-tint-1);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.event_info__description > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--ksf-secondary-tint-3);
+  max-width: 384px;
+  margin-bottom: 1.5rem;
+}
+
+.event_info__description .location_tag {
+  display: flex;
+}
+
+.event_info__flyer {
+  box-shadow: 0px 55.0338px 55.0338px -13.7584px rgba(0, 0, 0, 0.08), 0px 0px 55.0338px -13.7584px rgba(0, 0, 0, 0.12);
+  filter: drop-shadow(0px 0px 1.71981px rgba(0, 0, 0, 0.2));
+  border-radius: 8px;
+}
+
+.event_info__flyer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 350px;
+}
+
+@media screen and (max-width: 1090px) {
+  .event_info {
+    flex-direction: column;
+  }
+
+  .event_info__description {
+    margin-right: 0px;
+  }
+
+  .event_info__flyer {
+    height: fit-content;
+    margin-top: 40px;
+    max-width: 400px;
+  }
+
+  .event_info__flyer img {
+    min-width: unset;
+    width: 100%;
+    height: 100%;
+  }
+}
