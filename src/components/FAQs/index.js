@@ -6,8 +6,8 @@ import { FAQCollapse, FAQExpand } from '../../assets'
 export function FAQ({ data = [] }) {
   return (
     <section className={`${styles['faq']}`}>
-      {data.map(item => (
-        <Question question={item.question} answer={item.answer} />
+      {data.map((item, idx) => (
+        <Question key={idx} question={item.question} answer={item.answer} />
       ))}
     </section>
   )

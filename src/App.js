@@ -1,7 +1,6 @@
 import { Carousel as UpcomingEvent, LandingNav, TeamMemberCard, FAQ, FooterNavLinks } from './components'
 import styles from './App.module.css'
 import {
-  CEO,
   ContactEmailIcon,
   ContactLocationIcon,
   ContactPhoneIcon,
@@ -14,7 +13,6 @@ import {
   RightArrowIcon,
   TwitterIcon,
   VisionIcon,
-  aboutUsVideo,
   affiliate_1,
   affiliate_2,
   affiliate_3,
@@ -22,20 +20,7 @@ import {
   affiliate_5,
   affiliate_6,
   affiliate_7,
-  boySmilePic,
-  childSmilePic,
-  childrenSmilePic,
-  congraturlatory_msg_1,
-  congraturlatory_msg_2,
-  congraturlatory_msg_3,
-  cornPic,
-  financeDirector,
-  grandmaPic,
   ksfLogo,
-  marketing_director_1,
-  marketing_director_2,
-  whatWeDoVideo,
-  womanSmilePic,
 } from './assets'
 import CountUp from 'react-countup'
 import { useCallback, useMemo } from 'react'
@@ -44,11 +29,31 @@ import useWindowSize from './hooks/useWindowSize'
 const App = () => {
   const TEAM_MEMBERS = useMemo(
     () => [
-      { position: 'CEO', picture: CEO, name: 'Kedrick Scribner' },
-      { position: 'Marketing Director', name: 'M. Scribner', picture: marketing_director_2 },
-      { position: 'Director of Finance', name: 'C. Ujunwa', picture: financeDirector },
-      { position: 'Marketing Director', name: 'R. Triplin', picture: marketing_director_1 },
-      { position: 'Managing Director', name: 'K. Scribner Jr', picture: marketing_director_2 },
+      {
+        position: 'CEO',
+        picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789785/CEO_msjcsj.png',
+        name: 'Kedrick Scribner',
+      },
+      {
+        position: 'Marketing Director',
+        name: 'M. Scribner',
+        picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789792/MD_vj3fjb.png',
+      },
+      {
+        position: 'Director of Finance',
+        name: 'C. Ujunwa',
+        picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789790/Finance_Director_rdphnl.png',
+      },
+      {
+        position: 'Marketing Director',
+        name: 'R. Triplin',
+        picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789791/marketing_director_vrjeel.png',
+      },
+      {
+        position: 'Managing Director',
+        name: 'K. Scribner Jr',
+        picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789790/managing-director_tzy1wu.png',
+      },
     ],
     [],
   )
@@ -103,7 +108,7 @@ const App = () => {
           <div className={styles.video_overlay}></div>
           <video
             className={styles.hero_video}
-            src="https://res.cloudinary.com/dscuc72dw/video/upload/v1672660955/BG_video_upmncq.mp4"
+            src="https://res.cloudinary.com/dscuc72dw/video/upload/q_auto:good/f_auto/v1672660955/BG_video_upmncq.mp4"
             autoPlay
             muted
             loop
@@ -111,14 +116,32 @@ const App = () => {
         </section>
       </header>
       <section className={styles.gallery_section}>
-        <img src={boySmilePic} alt="boy smiling" />
+        <img
+          src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789788/boy_smile_vi9kt4.png"
+          alt="boy smiling"
+        />
         <div className={styles.gallery_section__group}>
-          <img src={childSmilePic} alt="boy smiling" />
-          <img src={cornPic} alt="grains" />
-          <img src={childrenSmilePic} alt="children smiling" />
-          <img src={grandmaPic} alt="elderly smiling" />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789788/child_smile_ngtm6d.png"
+            alt="boy smiling"
+          />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789789/corn_gbwmkq.png"
+            alt="grains"
+          />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789787/children_smile_ywhy9p.png"
+            alt="children smiling"
+          />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789791/grandma_efaryj.png"
+            alt="elderly smiling"
+          />
         </div>
-        <img src={womanSmilePic} alt="woman smiling" />
+        <img
+          src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789792/woman_smile_nbrtbk.png"
+          alt="woman smiling"
+        />
       </section>
 
       <section className={styles.about_section} id="about-us">
@@ -141,7 +164,10 @@ const App = () => {
             </div>
           </div>
 
-          <img src={aboutUsVideo} alt="" />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789788/about_us__video_tjnipk.png"
+            alt=""
+          />
         </section>
         <p>
           The Kedrick Scribner Foundation, Inc. was established with the belief that we cannot live our lives alone. Our
@@ -187,7 +213,10 @@ const App = () => {
               States.
             </p>
           </header>
-          <img src={whatWeDoVideo} alt="" />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672791551/what_we_do__video_uaxyyu.png"
+            alt=""
+          />
           <p>In our years of service we have impacted lives and changed stories and here are some metric</p>
           <section className={styles.what_we_do_section__stats}>
             <div className={styles.stats_group}>
@@ -222,9 +251,18 @@ const App = () => {
         </section>
 
         <div className={styles.message_list}>
-          <img src={congraturlatory_msg_1} alt="congraturlatory message 1" />
-          <img src={congraturlatory_msg_3} alt="congraturlatory message 3" />
-          <img src={congraturlatory_msg_2} alt="congraturlatory message 2" />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789790/congratulations_1_z7qeyf.png"
+            alt="congraturlatory message 1"
+          />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789790/congratulations_3_ttpfq0.png"
+            alt="congraturlatory message 3"
+          />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789790/congratulations_2_adptmz.png"
+            alt="congraturlatory message 2"
+          />
         </div>
       </div>
 
@@ -265,12 +303,11 @@ const App = () => {
 
           <aside className={styles.testimony_content__container}>
             <iframe
-              src="https://player.cloudinary.com/embed/?public_id=v1672661066%2FTestimonial_wek40h&cloud_name=dscuc72dw&player[fluid]=true&player[controls]=true&source[poster]=https%3A%2F%2Fres.cloudinary.com%2Fdscuc72dw%2Fimage%2Fupload%2Fv1672671090%2Ftestimony_filler_hmxflk.jpg&source[sourceTypes][0]=mp4"
+              src="https://player.cloudinary.com/embed/?public_id=v1672661066%2FTestimonial_wek40h&cloud_name=dscuc72dw&player[fluid]=true&player[controls]=true&source[poster]=https%3A%2F%2Fres.cloudinary.com%2Fdscuc72dw%2Fimage%2Fupload%2Fq_auto:good%2Ff_auto%2Fv1672671090%2Ftestimony_filler_hmxflk.jpg&source[sourceTypes][0]=mp4"
               allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              frameborder="0"
+              allowFullScreen
+              frameBorder="0"
               title="testimony"
-              allowTransparency
             ></iframe>
             <article className={styles.testimony_content}>
               <h6 className={styles.header_intro__text}>The “Feed 1 million” outreach & Retreat</h6>

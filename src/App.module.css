@@ -43,7 +43,7 @@
 .hero_section {
   min-height: 880px;
   margin-top: 112px;
-  background: url('./assets/images/hero_bg.png');
+  background: url('https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789793/hero_bg_eczb6u.png');
   background-size: cover;
 }
 
@@ -250,7 +250,7 @@
   position: relative;
   width: 100%;
   max-height: 600px;
-  background: url('./assets/images/about_us.jpg');
+  background: url('https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789791/about_us_htn6xh.png');
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -470,7 +470,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('./assets/images/awards_bg.png');
+  background-image: url('https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789789/awards_bg_tjixqt.png');
   background-size: 100% 100%;
 }
 

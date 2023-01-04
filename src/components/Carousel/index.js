@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
 import { Tag } from '../Tag'
-import { CalendarIcon, LocationIcon, TimeIcon, upcoming_event_1 } from '../../assets'
+import { CalendarIcon, LocationIcon, TimeIcon } from '../../assets'
 
 const Carousel = ({ items = [], controls }) => {
   return (
@@ -25,7 +25,10 @@ const Carousel = ({ items = [], controls }) => {
           />
         </div>
         <div className={styles.event_info__flyer}>
-          <img src={upcoming_event_1} alt="Feeding widows of fallen heroes of the Nigerian Police force event" />
+          <img
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789793/upcoming_event_1_oqs6y1.png"
+            alt="Feeding widows of fallen heroes of the Nigerian Police force event"
+          />
         </div>
       </aside>
     </section>
