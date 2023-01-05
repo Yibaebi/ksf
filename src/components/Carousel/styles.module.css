@@ -70,8 +70,8 @@
 .event_info__flyer img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  min-width: 350px;
+  min-width: 500px;
+  max-height: 506px;
 }
 
 @media screen and (max-width: 1090px) {

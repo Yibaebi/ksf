@@ -25,13 +25,14 @@ import {
 import CountUp from 'react-countup'
 import { useCallback, useMemo } from 'react'
 import useWindowSize from './hooks/useWindowSize'
+import FAQ_LIST from './FAQ.json'
 
 const App = () => {
   const TEAM_MEMBERS = useMemo(
     () => [
       {
         position: 'CEO',
-        picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789785/CEO_msjcsj.png',
+        picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789785/CEO_msjcsj.jpeg',
         name: 'Kedrick Scribner',
       },
       {
@@ -53,36 +54,6 @@ const App = () => {
         position: 'Managing Director',
         name: 'K. Scribner Jr',
         picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789790/managing-director_tzy1wu.png',
-      },
-    ],
-    [],
-  )
-
-  const FAQs = useMemo(
-    () => [
-      {
-        id: 1,
-        question: 'Is there a free trial available?',
-        answer:
-          'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
-      },
-      {
-        id: 2,
-        question: 'Fix problems & request removals',
-        answer:
-          'Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum.',
-      },
-      {
-        id: 3,
-        question: 'Browse the web',
-        answer:
-          'Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum.',
-      },
-      {
-        id: 4,
-        question: 'Search on your phone or tablet',
-        answer:
-          'Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum.',
       },
     ],
     [],
@@ -352,7 +323,7 @@ const App = () => {
           <h4>Everything you need to know about the foundation.</h4>
           <hr />
 
-          <FAQ data={FAQs} />
+          <FAQ data={FAQ_LIST} />
         </section>
       </div>
       <div className={`${styles.team_section__wrapper} ${styles.contact}`} id="contact-us">

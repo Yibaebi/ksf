@@ -16,10 +16,14 @@
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+}
+
+.question h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #101828;
+  margin-right: 24px;
 }
 
 .question svg.active {
@@ -30,10 +34,11 @@
   opacity: 0.8;
 }
 
-button {
+.question button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  height: fit-content;
 }
 
 button:focus {
@@ -42,14 +47,16 @@ button:focus {
 
 .answer {
   display: none;
+  font-weight: 500;
 }
 
 .answer.active {
   display: block;
   text-align: left;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
+  padding-right: 3rem;
   height: 0%;
-  animation: slidein 0.4s;
+  animation: slidein 0.3s;
   animation-fill-mode: forwards;
   font-weight: 400;
   font-size: 16px;
@@ -60,7 +67,7 @@ button:focus {
 @keyframes slidein {
   from {
     opacity: 0.3;
-    transform: translateY(-20%);
+    transform: translateY(-10%);
   }
   to {
     opacity: 1;

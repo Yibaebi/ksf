@@ -16,6 +16,7 @@
   height: 128px;
   object-fit: cover;
   margin-bottom: 2rem;
+  border-radius: 100%;
 }
 
 .member_details {
