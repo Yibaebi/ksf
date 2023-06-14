@@ -42,7 +42,7 @@ const App = () => {
       },
       {
         position: 'Director of Finance',
-        name: 'C. Ujunwa',
+        name: 'C. Njuwa',
         picture: 'https://res.cloudinary.com/dscuc72dw/image/upload/f_auto/v1672789790/Finance_Director_rdphnl.png',
       },
       {
@@ -71,7 +71,14 @@ const App = () => {
           <h1>Spreading unconditional love through feeding, clothing and education.</h1>
           <p>Donating and helping out the less privileged is one of the best things you can do for humanity.</p>
           <div className={styles.button_group}>
-            <button className={`${styles.button} ${styles.button_yellow}`}>Donate now</button>
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=EQRUSYCARBMFY"
+              target="_blank"
+              rel="noreferrer"
+              className={`${styles.button} ${styles.button_yellow}`}
+            >
+              Donate now
+            </a>
             <button className={styles.button}>
               <DownloadIcon /> Download report & brochure
             </button>
@@ -336,7 +343,7 @@ const App = () => {
               <ContactEmailIcon />
               <h6>Email address</h6>
               <p>Speak to our friendly team.</p>
-              <a href="mailto:kkedrick@msn.com">kkedrick@msn.com</a>
+              <a href="mailto:kedrickscribnerfoundation@gmail.com">kedrickscribnerfoundation@gmail.com</a>
             </div>
             <div className={styles.info_card}>
               <ContactLocationIcon />
@@ -348,7 +355,7 @@ const App = () => {
               <ContactPhoneIcon />
               <h6>Call us</h6>
               <p>Mon-Fri from 8am to 5pm.</p>
-              <a href="tel:+1 (555) 000-0000">+1 (555) 000-0000</a>
+              <a href="tel:+410-491-0723 ">+410-491-0723 </a>
             </div>
           </section>
         </section>
@@ -384,16 +391,31 @@ const App = () => {
               Copyright &copy; {new Date().getFullYear()} LLC. All rights reserved
             </span>
             <div className={styles.social_profiles}>
-              <a href="#twitter">
+              <a
+                href="https://twitter.com/kedrickscribne1?s=21&t=0a7yKXPTgv4S3pGHUeCKqA"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <TwitterIcon />
               </a>
-              <a href="#linkedin">
+
+              <a href="https://www.linkedin.com/company/kedrick-scribner-fondation/" target="_blank" rel="noreferrer">
                 <LinkedInIcon />
               </a>
-              <a href="#facebook">
+
+              <a
+                href="https://www.facebook.com/profile.php?id=100088900696039&mibextid=LQQJ4d"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FacebookIcon />
               </a>
-              <a href="#instagram">
+
+              <a
+                href="https://instagram.com/kedrick_scribner_foundation?igshid=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noreferrer"
+              >
                 <InstagramIcon />
               </a>
             </div>

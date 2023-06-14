@@ -26,7 +26,7 @@ const Carousel = ({ items = [], controls }) => {
         </div>
         <div className={styles.event_info__flyer}>
           <img
-            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:good/f_auto/v1672789793/upcoming_event_1_oqs6y1.png"
+            src="https://res.cloudinary.com/dscuc72dw/image/upload/q_auto:low/v1672789793/upcoming_event_1_oqs6y1.jpg"
             alt="Feeding widows of fallen heroes of the Nigerian Police force event"
           />
         </div>
