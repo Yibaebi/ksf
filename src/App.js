@@ -262,13 +262,33 @@ const App = () => {
         <section className={styles.affiliates_section}>
           <h6 className={styles.header_intro__text}>Affiliated Companies</h6>
           <div className={styles.affiliates_list}>
-            <img src={affiliate_1} alt="affiliate 1" />
-            <img src={affiliate_2} alt="affiliate 2" />
-            <img src={affiliate_3} alt="affiliate 3" />
-            <img src={affiliate_4} alt="affiliate 4" />
-            <img src={affiliate_5} alt="affiliate 5" />
-            <img src={affiliate_6} alt="affiliate 6" />
-            <img src={affiliate_7} alt="affiliate 7" />
+            <a href="https://smoothluxurylogistics.com/" target="_blank" rel="noopener noreferrer">
+              <img src={affiliate_1} alt="Smooth Luxury Logistics" />
+            </a>
+
+            <a href="https://www.se7enrawhair.com/" target="_blank" rel="noopener noreferrer">
+              <img src={affiliate_2} alt="se7enrawhair" />
+            </a>
+
+            <a href="https://scribnerandassociates.com/" target="_blank" rel="noopener noreferrer">
+              <img src={affiliate_3} alt="scribner and associates" />
+            </a>
+
+            <a href="https://scribnerassociatesrealty.com/" target="_blank" rel="noopener noreferrer">
+              <img src={affiliate_4} alt="scribner associate reality" />
+            </a>
+
+            <a href="https://cvtstaxes.com/" target="_blank" rel="noopener noreferrer">
+              <img src={affiliate_5} alt="Charles Village" />
+            </a>
+
+            <a href="https://www.policesecuritygroup.com/" target="_blank" rel="noopener noreferrer">
+              <img src={affiliate_6} alt="Police Security Group" />
+            </a>
+
+            <a href="https://m.facebook.com/POProtectiveGroup" target="_blank" rel="noopener noreferrer">
+              <img src={affiliate_7} alt="Police Protective Group" />
+            </a>
           </div>
         </section>
       </div>

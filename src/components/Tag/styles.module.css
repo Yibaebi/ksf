@@ -29,6 +29,10 @@
   background-color: var(--ksf-pink);
 }
 
+.tag.grey {
+  background-color: var(--ksf-primary-tint-5);
+}
+
 .icon {
   display: flex;
   align-items: center;
